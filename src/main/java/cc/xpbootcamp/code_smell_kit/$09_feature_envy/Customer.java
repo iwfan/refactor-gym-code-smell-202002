@@ -4,6 +4,7 @@ public class Customer {
 
     private Phone mobilePhone;
 
+    // feature envy
     public String getMobilePhoneNumber() {
         return "(" +
                 mobilePhone.getAreaCode() + ") " +

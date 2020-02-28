@@ -12,6 +12,7 @@ public class Account {
     }
 
     public void debit(int debit) throws Exception {
+        // shotgun surgery
         if (amount <= 500) {
             throw new Exception("Mininum balance shuold be over 500");
         }
@@ -20,6 +21,7 @@ public class Account {
     }
 
     public void transfer(Account from, Account to, int cerditAmount) throws Exception {
+        // shotgun surgery
         if (from.amount <= 500) {
             throw new Exception("Mininum balance shuold be over 500");
         }
@@ -27,6 +29,7 @@ public class Account {
     }
 
     public void sendWarningMessage() {
+        // shotgun surgery
         if (amount <= 500) {
             System.out.println("amount should be over 500");
         }
